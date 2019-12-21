@@ -1,31 +1,24 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import About from "./components/about.component";
+import Contact from "./components/contact.component";
+import Gallery from "./components/gallery.component";
+import Home from "./components/home.component";
+import Skills from "./components/skills.component";
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <div className="container-fluid">
-        <div className="navigation">
-          <a className="logo">
-            Logo
-          </a>
-          <nav className="nav-links">
-            <a className="home-link active"></a>
-            <a className="about"></a>
-            <a className="skills"></a>
-            <a className="gallery"></a>
-            <a className="contact"></a>
-          </nav>
-          <ul className="contact-links">
-            <li className="link"></li>
-            <li className="link"></li>
-            <li className="link"></li>
-            <li className="link"></li>
-          </ul>
+      <Router>
+        <div className="App">
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/skills" component={Skills} />
+          <Route path="/gallery" component={Gallery} />
+          <Route path="/contact" component={Contact} />
         </div>
-      </div>
+      </Router>
     )
   }
 }
-
-export default App;
