@@ -50,7 +50,9 @@ export default class Home extends Component {
               <h2>Front End Developer / WordPress Developer / Freelancer</h2>
               <a className="button">CONTACT ME</a>
             </div>
-            <div className="user-img"></div>
+            <div className="user-img">
+              <img src="./logo192.png" alt="Logo"/>
+            </div>
           </div>
         </section>
       </div>

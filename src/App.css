@@ -123,7 +123,7 @@ html{
 .home .content-area .container .profile{
   position: absolute;
   left: 10%;
-  top: 40%;
+  top: 32%;
   width: 40%;
   max-height: 90%;
 }
@@ -149,4 +149,23 @@ html{
   margin-top: 25px;
   float: left;
   color: #08fdd8;
+}
+.home .content-area .container .user-img{
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+}
+.home .content-area .container .user-img img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
 }
