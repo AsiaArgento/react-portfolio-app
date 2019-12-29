@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import About from "./components/about.component";
 import Contact from "./components/contact.component";
 import Gallery from "./components/gallery.component";
