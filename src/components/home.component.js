@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import logo from '../logo.svg';
 import { faHome, faUser, faCog, faEye, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -7,10 +8,10 @@ library.add(fab)
 
 export default class Home extends Component {
 
-  constructor(props) {
-    super(props);
-  }
+  constructor() {
+    super();
 
+  }
 
   render() {
     return (
@@ -48,10 +49,10 @@ export default class Home extends Component {
             <div className="profile">
               <h1>Hi,<br /> I'm Matt,<br /> web developer.</h1>
               <h2>Front End Developer / WordPress Developer / Freelancer</h2>
-              <a className="button">CONTACT ME</a>
+              <a href="/contact" className="button">CONTACT ME</a>
             </div>
             <div className="user-img">
-              <img src="./logo192.png" alt="Logo"/>
+              <img src={logo} className="App-logo" alt="logo" />
             </div>
           </div>
         </section>
