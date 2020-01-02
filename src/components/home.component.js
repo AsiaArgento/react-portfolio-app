@@ -7,10 +7,27 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 library.add(fab)
 
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
 
-  constructor() {
-    super();
+    this.state = {
+      isHover: false
+    };
 
+    this.onMouseEnterHandler = this.onMouseEnterHandler.bind(this);
+    this.onMouseLeaveHandler = this.onMouseLeaveHandler.bind(this);
+  }
+
+  onMouseEnterHandler() {
+    this.setState({
+      isHover: true
+    });
+  }
+
+  onMouseLeaveHandler() {
+    this.setState({
+      isHover: false
+    });
   }
 
   render() {
@@ -20,11 +37,16 @@ export default class Home extends Component {
         <section className="info-section">
           <div className="logo">M</div>
           <div className="info-box-top">
-            <a className="home active" href="/"><FontAwesomeIcon icon={faHome} /></a>
-            <a href="/skills"><FontAwesomeIcon icon={faUser} /></a>
-            <a href="/skills"><FontAwesomeIcon icon={faCog} /></a>
-            <a href="/gallery"><FontAwesomeIcon icon={faEye} /></a>
-            <a href="/contact"><FontAwesomeIcon icon={faEnvelope} /></a>
+            <a onMouseEnter={this.onMouseEnterHandler} onMouseLeave={this.onMouseLeaveHandler} className="home active" id="one" href="/">
+              { this.state.isHover
+                  ? <span>Home</span>
+                  : <FontAwesomeIcon icon={faHome} />
+              }
+            </a>
+            <a id="two" href="/about"><FontAwesomeIcon icon={faUser} /></a>
+            <a id="three" href="/skills"><FontAwesomeIcon icon={faCog} /></a>
+            <a id="four" href="/gallery"><FontAwesomeIcon icon={faEye} /></a>
+            <a id="five" href="/contact"><FontAwesomeIcon icon={faEnvelope} /></a>
           </div>
           <div className="info-box-bottom">
             <ul className="contact-links">
