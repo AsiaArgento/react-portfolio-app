@@ -37,16 +37,16 @@ export default class Home extends Component {
         <section className="info-section">
           <div className="logo">M</div>
           <div className="info-box-top">
-            <a onMouseEnter={this.onMouseEnterHandler} onMouseLeave={this.onMouseLeaveHandler} className="home active" id="one" href="/">
+            <a onMouseEnter={this.onMouseEnterHandler} onMouseLeave={this.onMouseLeaveHandler} className="home active" href="/">
               { this.state.isHover
                   ? <span>Home</span>
                   : <FontAwesomeIcon icon={faHome} />
               }
             </a>
-            <a id="two" href="/about"><FontAwesomeIcon icon={faUser} /></a>
-            <a id="three" href="/skills"><FontAwesomeIcon icon={faCog} /></a>
-            <a id="four" href="/gallery"><FontAwesomeIcon icon={faEye} /></a>
-            <a id="five" href="/contact"><FontAwesomeIcon icon={faEnvelope} /></a>
+            <a href="/about"><FontAwesomeIcon className="icon two" icon={faUser} /></a>
+            <a href="/skills"><FontAwesomeIcon className="icon three" icon={faCog} /></a>
+            <a href="/gallery"><FontAwesomeIcon className="icon four" icon={faEye} /></a>
+            <a href="/contact"><FontAwesomeIcon className="icon five" icon={faEnvelope} /></a>
           </div>
           <div className="info-box-bottom">
             <ul className="contact-links">
