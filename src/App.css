@@ -91,6 +91,9 @@ html{
 .home .info-section .info-box-top a:hover{
   color: #08fdd8;
 }
+.home .info-section .info-box-top span{
+  font-size: .8em;
+}
 .home .info-section .info-box-bottom{
   position: absolute;
   bottom: 20px;
