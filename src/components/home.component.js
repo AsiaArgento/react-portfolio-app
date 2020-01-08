@@ -32,7 +32,7 @@ export default class Home extends Component {
     return (
       <div className="home">
       <div className="hamburger-icon"></div>
-        <section className="info-section">
+        <section id="top-responsive" className="info-section">
           <div className="logo">M</div>
           <div className="info-box-top">
             <a
