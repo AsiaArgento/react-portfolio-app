@@ -31,8 +31,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="home">
-      <div className="hamburger-icon"></div>
-        <section id="top-responsive" className="info-section">
+        <section className="info-section">
           <div className="logo">M</div>
           <div className="info-box-top">
             <a
